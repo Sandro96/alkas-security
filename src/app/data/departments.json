@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Canelones",
+      "image": "/Canelones.webp"
+    },
+    {
+      "id": 2,
+      "name": "Maldonado",
+      "image": "/Maldonado.webp"
+    },
+    {
+      "id": 3,
+      "name": "Montevideo",
+      "image": "/Montevideo.webp"
+    },
+    {
+      "id": 4,
+      "name": "Paysandu",
+      "image": "/Paysandu.webp"
+    },
+    {
+      "id": 5,
+      "name": "Rio Negro",
+      "image": "/RioNegro.webp"
+    },
+    {
+      "id": 6,
+      "name": "Salto",
+      "image": "/Salto.webp"
+    }
+  ]
+  

@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "icon": "FaRegCreditCard",
+        "title": "Logística"
+    },
+    {
+        "id": 2,
+        "icon": "FaTruck",
+        "title": "Transporte"
+    },
+    {
+        "id": 3,
+        "icon": "FaMoneyBill1",
+        "title": "Custodia"
+    },
+    {
+        "id": 4,
+        "icon": "PiTableFill",
+        "title": "Cajeros Automáticos"
+    },
+    {
+        "id": 5,
+        "icon": "RiDoorLockBoxFill",
+        "title": "Cajas Inteligentes"
+    },
+    {
+        "id": 6,
+        "icon": "IoShieldHalf",
+        "title": "Seguridad Física"
+    }
+]
