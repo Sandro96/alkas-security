@@ -50,7 +50,7 @@ const NationalInfo: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto flex justify-center gap-20 flex-col xl:flex-row">
+      <div className="container mx-auto flex justify-center gap-20 flex-col xl:flex-row items-center">
         <NationalCoverage />
         <NationalTransport />
       </div>
