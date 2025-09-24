@@ -1,39 +1,23 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import certification from "@/app/assets/certification.webp";
+import { useIntersectionObserver } from "../hooks";
+import { Section, Container } from "./ui";
 
 const Certification: React.FC = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const section = document.querySelector("#certification-section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.2 }
-    );
-
-    if (section) {
-      observer.observe(section);
-    }
-    return () => {
-      if (section) observer.unobserve(section);
-    };
-  }, []);
+  const { isVisible, ref } = useIntersectionObserver(0.2);
 
   return (
-    <section
+    <Section
+      ref={ref}
       id="certification-section"
       className={`py-10 bg-gray-100 transition-opacity duration-500 ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="container mx-auto flex flex-col justify-center items-center">
+      <Container className="flex flex-col justify-center items-center">
         <h2 className="text-3xl font-bold mb-8 text-center">Certificaciones y Acreditaciones</h2>
 
         <div className="relative w-[90%] sm:w-[100%] h-auto lg:w-[900px] lg:h-[480px] group rounded-lg sm:overflow-hidden shadow-lg">
@@ -47,7 +31,7 @@ const Certification: React.FC = () => {
           <div className="absolute bottom-16 left-0 w-full flex flex-col items-center text-center p-3">
             <div className="relative bg-secondary bg-opacity-100 sm:bg-opacity-90 text-white rounded-lg px-6 py-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 border-2 border-transparent group-hover:border-white">
               <p className="text-xl lg:text-2xl mb-4">
-              Nos complace anunciar que hemos obtenido todas las acreditaciones necesarias, reafirmando nuestro compromiso con la excelencia, la seguridad y la gestión responsable
+                Nos complace anunciar que hemos obtenido todas las acreditaciones necesarias, reafirmando nuestro compromiso con la excelencia, la seguridad y la gestión responsable
               </p>
             </div>
           </div>
@@ -65,8 +49,8 @@ const Certification: React.FC = () => {
             </a>
           </div>
         </div>
-      </div>
-    </section>
+      </Container>
+    </Section>
   );
 };
 
