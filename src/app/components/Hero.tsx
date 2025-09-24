@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="w-full relative" aria-labelledby="hero-heading">
-      <h1 id="hero-heading" className="sr-only">Alka's Security - Servicios de Seguridad y Transporte de Valores en Uruguay</h1>
+      <h1 id="hero-heading" className="sr-only">Alka&apos;s Security - Servicios de Seguridad y Transporte de Valores en Uruguay</h1>
       <div className="container mx-auto flex flex-col items-center relative my-5 shadow-[0px_0px_5px_5px_rgba(0,_0,_0,_0.3)]">
         <HeroButton direction="left" onClick={goToPrevious} isDisabled={isTransitioning} />
         <div

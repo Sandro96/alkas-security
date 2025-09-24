@@ -6,6 +6,7 @@ import Footer from "@/app/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://alkas-security.com'),
   title: "Alka's Security - Servicios de Seguridad y Transporte de Valores en Uruguay",
   description: "Alka's Security ofrece servicios profesionales de seguridad, transporte de valores y logística en Uruguay. Protegemos bancos, supermercados, navieras y empresas con tecnología de vanguardia y personal altamente capacitado.",
   keywords: [

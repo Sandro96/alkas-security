@@ -45,7 +45,7 @@ const LazyVideo: React.FC<{ videoId: string }> = ({ videoId }) => {
 const NationalInfo: React.FC = () => {
   return (
     <section id="la-empresa" className="py-5 bg-gray-100 flex flex-col gap-14">
-      <h2 className="sr-only">Información Corporativa de Alka's Security</h2>
+      <h2 className="sr-only">Información Corporativa de Alka&apos;s Security</h2>
       <div>
         <div className="bg-secondary py-10">
           <div className="container mx-auto text-center">
