@@ -27,7 +27,13 @@ const Header: React.FC = () => {
     <div className="relative w-full border-b-2 bg-white z-50">
       <div className="flex justify-between items-center p-3 container mx-auto">
         <Link href="/" className="flex items-center">
-          <Image src={IconExtend} alt="Logo Alka's Security" height={48} />
+          <Image 
+            src={IconExtend} 
+            alt="Alka's Security - Servicios de Seguridad y Transporte de Valores en Uruguay" 
+            height={48}
+            priority
+            loading="eager"
+          />
         </Link>
 
         <div className="flex items-center gap-5 text-center">

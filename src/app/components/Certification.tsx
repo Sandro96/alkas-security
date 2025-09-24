@@ -34,13 +34,15 @@ const Certification: React.FC = () => {
       }`}
     >
       <div className="container mx-auto flex flex-col justify-center items-center">
-        <h2>Certificaciones</h2>
+        <h2 className="text-3xl font-bold mb-8 text-center">Certificaciones y Acreditaciones</h2>
 
         <div className="relative w-[90%] sm:w-[100%] h-auto lg:w-[900px] lg:h-[480px] group rounded-lg sm:overflow-hidden shadow-lg">
           <Image
             src={certification}
-            alt="Certificación"
+            alt="Certificaciones de Alka's Security - Acreditaciones de seguridad y gestión responsable"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
+            sizes="(max-width: 768px) 90vw, (max-width: 1200px) 100vw, 900px"
           />
           <div className="absolute bottom-16 left-0 w-full flex flex-col items-center text-center p-3">
             <div className="relative bg-secondary bg-opacity-100 sm:bg-opacity-90 text-white rounded-lg px-6 py-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 border-2 border-transparent group-hover:border-white">

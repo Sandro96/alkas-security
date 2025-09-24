@@ -4,9 +4,9 @@ import React, { useState, useEffect, useCallback } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const banners = [
-  { src: "/branch.webp", alt: "Imagen 1", titulo: "Nuestra sucursal", descripcion: "Visítanos en nuestra sucursal para recibir atención personalizada y asesoramiento." },
-  { src: "/experts.webp", alt: "Imagen 2", titulo: "Respuesta inmediata", descripcion: "Contamos con un equipo de expertos listos para atender cualquier emergencia las 24 horas del día." },
-  { src: "/tecnology.webp", alt: "Imagen 3", titulo: "Innovamos en seguridad", descripcion: "Implementamos tecnología de vanguardia para garantizar su protección o la de su negocio." }
+  { src: "/branch.webp", alt: "Sucursal de Alka's Security - Oficina principal con atención personalizada", titulo: "Nuestra sucursal", descripcion: "Visítanos en nuestra sucursal para recibir atención personalizada y asesoramiento." },
+  { src: "/experts.webp", alt: "Equipo de expertos en seguridad de Alka's Security - Respuesta inmediata 24/7", titulo: "Respuesta inmediata", descripcion: "Contamos con un equipo de expertos listos para atender cualquier emergencia las 24 horas del día." },
+  { src: "/tecnology.webp", alt: "Tecnología de vanguardia en seguridad - Sistemas avanzados de protección", titulo: "Innovamos en seguridad", descripcion: "Implementamos tecnología de vanguardia para garantizar su protección o la de su negocio." }
 ];
 
 const HeroButton: React.FC<{
@@ -91,6 +91,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="w-full relative" aria-labelledby="hero-heading">
+      <h1 id="hero-heading" className="sr-only">Alka's Security - Servicios de Seguridad y Transporte de Valores en Uruguay</h1>
       <div className="container mx-auto flex flex-col items-center relative my-5 shadow-[0px_0px_5px_5px_rgba(0,_0,_0,_0.3)]">
         <HeroButton direction="left" onClick={goToPrevious} isDisabled={isTransitioning} />
         <div

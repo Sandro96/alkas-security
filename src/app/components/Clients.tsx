@@ -52,7 +52,7 @@ const Clients: React.FC = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h2>Nuestros Clientes</h2>
+        <h2 className="text-3xl font-bold mb-8">Nuestros Clientes</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 px-4 sm:px-0 gap-4 sm:gap-10 xl:gap-20">
           {categories.map((category, index) => (
             <a

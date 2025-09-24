@@ -1,0 +1,22 @@
+{
+  "name": "Alka's Security - Servicios de Seguridad y Transporte de Valores",
+  "short_name": "Alka's Security",
+  "description": "Servicios profesionales de seguridad, transporte de valores y logística en Uruguay",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "security", "transportation"],
+  "lang": "es-UY",
+  "scope": "/",
+  "id": "alkas-security"
+}
